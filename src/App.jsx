@@ -1,13 +1,16 @@
 import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
-    <>
+    <div className="flex flex-col ">
       <Navbar />
-      <h1 className="text-5xl text-center text-teal-900 font-serif">
-        Folder structure for the project created!
-      </h1>
-    </>
+      <main className="flex-1 min-h-[calc(100vh-100px)]">
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
   );
 }
 

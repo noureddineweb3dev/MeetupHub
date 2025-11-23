@@ -1,23 +1,21 @@
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Button from '../ui/Button';
 
 function Navbar() {
   return (
     <>
       <div>
-        <nav className="bg-red-900 px-20 flex items-center justify-between h-16 text-white">
-          <h1 className="text-primary text-2xl font-bold">MeetupHub</h1>
-          <div className="flex gap-3 text-primary font-medium">
-            <NavLink to="/">Home</NavLink>
+        <nav className="bg-white px-10 m-4 flex items-center justify-between h-13  border-b border-gray-300 rounded-4xl">
+          <h1 className="text-black text-xl font-bold">MeetupHub</h1>
+
+          <div className="flex justify-between items-center gap-3 text-sm">
+            <NavLink to="/">Discover</NavLink>
             <NavLink to="/about">About</NavLink>
-            <NavLink to="/features">Features</NavLink>
             <NavLink to="/contact">Contact</NavLink>
+            <NavLink to="/Login">Log in</NavLink>
+            <Button text="Create Meetup" />
           </div>
-          <Button text="Get Started" />
         </nav>
-      </div>
-      <div>
-        <Outlet />
       </div>
     </>
   );

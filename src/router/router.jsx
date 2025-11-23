@@ -1,17 +1,17 @@
 import { createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom';
-import Navbar from '../components/layout/Navbar';
-import Home from '../pages/Menu/Home';
+import App from '../App';
+import Discover from '../pages/Menu/Discover';
 import About from '../pages/Menu/About';
-import Features from '../pages/Menu/Features';
+import Login from '../pages/Auth/Login';
 import Contact from '../pages/Menu/Contact';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route element={<Navbar />}>
-      <Route path="/" element={<Home />} />
+    <Route element={<App />}>
+      <Route path="/" element={<Discover />} />
       <Route path="/about" element={<About />} />
-      <Route path="/features" element={<Features />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/Login" element={<Login />} />
     </Route>
   )
 );
