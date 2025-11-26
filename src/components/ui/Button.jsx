@@ -1,9 +1,7 @@
-function Button({ text }) {
+function Button({ text, buttonStyles }) {
   return (
     <div>
-      <button className="btn bg-gray-50 text-black px-3 py-1 rounded-2xl font-medium hover:shadow-md hover:bg-gray-100 ">
-        {text}
-      </button>
+      <button className={buttonStyles}>{text}</button>
     </div>
   );
 }

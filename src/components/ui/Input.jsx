@@ -1,7 +1,5 @@
-import React from 'react';
-
-function Input() {
-  return <div>Input</div>;
+function Input({ placeholderText, inputType, inputStyles }) {
+  return <input type={inputType} placeholder={placeholderText} className={inputStyles} />;
 }
 
 export default Input;
