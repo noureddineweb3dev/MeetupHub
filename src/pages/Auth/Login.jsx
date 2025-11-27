@@ -1,5 +1,6 @@
 import Input from '../../components/ui/Input';
 import Button from '../../components/ui/Button';
+import { Link } from 'react-router-dom';
 
 function Login() {
   return (
@@ -37,9 +38,9 @@ function Login() {
           />
           <p className="text-sm">
             Don't have an account?{' '}
-            <a href="#" className="text-teal-600 hover:underline">
+            <Link to="/register" className="text-teal-600 hover:underline">
               Create account
-            </a>{' '}
+            </Link>{' '}
           </p>
         </div>
       </div>
